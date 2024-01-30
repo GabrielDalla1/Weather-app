@@ -22,3 +22,17 @@ Comece dando o seguinte comando para instalar o node_Modules em sua máquina:
 ```bash
 npm install
 ```
+
+Esse comando irá instalar as seguintes dependências que são necessárias para que o projeto rode em sua máquina:
+```bash
+"dependencies": {
+        "axios": "^1.6.5",
+        "dotenv": "^16.4.0",
+        "express": "^4.18.2",
+        "mysql2": "^3.8.0",
+        "sequelize": "^6.35.2"
+      },
+      "devDependencies": {
+        "nodemon": "^3.0.3"
+      } 
+```
