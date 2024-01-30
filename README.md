@@ -6,6 +6,6 @@ Weather App é uma aplicação Node.js que oferece uma solução simplificada pa
 
 Node.js version:
 
-```javascript
+```bash
 v21.1.0
 ```
