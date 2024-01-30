@@ -37,10 +37,21 @@ Esse comando irá instalar as seguintes dependências que são necessárias para
       } 
 ```
 
-Certifique-se também de ter o Docker instalado em sua máquina, pois ele irá ser necessário para rodar o Projeto.
+Certifique-se também de ter o Docker instalado, pois ele irá ser necessário para rodar o Projeto.
 
 Após estar com o Docker aberto em sua máquina, na raiz do projeto, escreva o seguinte comando:
 ```bash
-docker-compose up
+docker-compose build
 ```
-Esse comando irá colocar seu projeto junto com sua imagem para rodar em seu container, ambos estando na mesma Network
+Após a construção das imagens, inicie os contêineres com o seguinte comando:
+```bash
+docker-compose up -d
+```
+Esse comando irá colocar seu projeto junto com sua imagem para rodar em seu container, ambos estando na mesma Network.
+
+# Configurar o ambiente Docker
+Rode o seguinte comando na terminal root do seu projeto:
+```bash
+docker exec -it weather-my-mysql-1 mysql -u root -p
+// esse comando vai lhe redirecionar ao MySql dentro do seu Docker, Insira a Senha "password" para fazer login.
+```
