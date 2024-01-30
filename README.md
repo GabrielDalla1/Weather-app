@@ -68,13 +68,59 @@ docker exec -it weather-app-1 bash
 Após estar no bash da sua aplicação node.js, devemos rodar os arquivos /user/app/db_webhook/createwhdb.js e /user/app/db_connection/dbcreate.js, para isso iremos executar os demais comandos:
 
 ```bash
-cd /db_webhook/
+cd db_webhook/
 node createwhdb.js
 ```
 E então devemos realizar isso com o segundo arquivo:
 ```bash
 cd ..
-cd /db_connection/
+cd db_connection/
 node dbcreate.js
 ```
 Agora sua aplicação deve estar com os bancos de dados criados, conectados e rodando!
+
+# Endpoints
+
+Endpoint GET /weather
+
+```javascript
+/**
+ * Endpoint: GET /weather
+ * Descrição: Retorna informações meteorológicas para a cidade e país especificados.
+ * Parâmetros:
+ *   - city: Nome da cidade.
+ *   - country: Código do país. (exemplo: Estados Unidos deve ser "USA").
+ */
+```
+
+Endpoint GET /history
+
+```javascript
+/**
+ * Endpoint: GET /history
+ * Descrição: Retorna histórico de informações meteorológicas para a cidade e país especificados em consultas anteriores.
+ * Exemplo de retorno (JSON):
+ *  [
+ *    {
+ *       "city": "",
+ *       "country": "",
+ *       "requestDate": "",
+ *       "weatherData": {}
+ *    }
+ *  ]
+ */
+```
+
+Endpoint POST /webhook
+
+```javascript
+/**
+ * Endpoint: POST /webhook
+ * Descrição: Configura webhooks para cidades específicas.
+ * Corpo da Solicitação:
+ *   - city_name: Nome da cidade.
+ *   - country: Código do país. (exemplo: Estados Unidos deve ser "USA").
+ *   - webhookURL: URL do webhook.
+ */
+
+```
