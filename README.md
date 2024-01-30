@@ -16,7 +16,7 @@ MySQL versão:
 ^3.8.0
 ```
 
-Ao Importar esse sistema para sua máquina, certifique-se de ter o Node.js e MySql compátiveis com as versões acima.
+Ao Importar esse sistema para sua máquina, certifique-se de ter o Node.js e MySql compatíveis com as versões acima.
 
 Comece dando o seguinte comando para instalar o node_Modules em sua máquina:
 ```bash
