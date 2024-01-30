@@ -51,7 +51,7 @@ Esse comando irá colocar seu projeto junto com sua imagem para rodar em seu con
 
 # Configurar o ambiente Docker
 Rode o seguinte comando na terminal root do seu projeto:
-```bash
+```javascript
 docker exec -it weather-my-mysql-1 mysql -u root -p
 // esse comando vai lhe redirecionar ao MySql dentro do seu Docker, Insira a Senha "password" para fazer login.
 ```
