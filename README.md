@@ -36,3 +36,11 @@ Esse comando irá instalar as seguintes dependências que são necessárias para
         "nodemon": "^3.0.3"
       } 
 ```
+
+Certifique-se também de ter o Docker instalado em sua máquina, pois ele irá ser necessário para rodar o Projeto.
+
+Após estar com o Docker aberto em sua máquina, na raiz do projeto, escreva o seguinte comando:
+```bash
+docker-compose up
+```
+Esse comando irá colocar seu projeto junto com sua imagem para rodar em seu container, ambos estando na mesma Network
