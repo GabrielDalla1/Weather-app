@@ -55,3 +55,7 @@ Rode o seguinte comando na terminal root do seu projeto:
 docker exec -it weather-my-mysql-1 mysql -u root -p
 // esse comando vai lhe redirecionar ao MySql dentro do seu Docker, Insira a Senha "password" para fazer login.
 ```
+Agora você deve criar o Banco de Dados "weather" com seguinte comando:
+```mysql
+CREATE DATABASE weather;
+```
