@@ -4,7 +4,6 @@ Descrição:
 
 Weather App é uma aplicação Node.js que oferece uma solução simplificada para desenvolvedores consultarem dados meteorológicos sem a necessidade de uma chave de API.
 
-Para que o projeto rode é necessário o mesmo ser copiado para uma pasta chamada "Weather"
 
 Node.js versão:
 
