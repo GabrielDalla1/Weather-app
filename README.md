@@ -54,7 +54,7 @@ Esse comando irá colocar seu projeto junto com sua imagem para rodar em seu con
 # Configurar o ambiente Docker
 Rode o seguinte comando na terminal root do seu projeto:
 ```javascript
-docker exec -it weather-my-mysql-1 mysql -u root -p
+docker exec -it weather-app-my-mysql-1 mysql -u root -p
 // esse comando vai lhe redirecionar ao MySql dentro do seu Docker, Insira a Senha "password" para fazer login.
 ```
 Agora você deve criar o Banco de Dados "weather" com seguinte comando:
@@ -64,7 +64,7 @@ CREATE DATABASE weather;
 Esse Database é necessário para que sua aplicação rode.
 agora você deve entrar no bash da aplicação node, na sua terminal execute o seguinte comando:
 ```bash
-docker exec -it weather-app-1 bash
+docker exec -it weather-app-app-1 bash
 ```
 É Necessário entender que há dois arquivos responsáveis por criar as tabelas do projeto, e precisamos rodar eles dentro do docker, sendo assim necessário o banco de dados "weather" já estar criado.
 Após estar no bash da sua aplicação node.js, devemos rodar os arquivos /user/app/db_webhook/createwhdb.js e /user/app/db_connection/dbcreate.js, para isso iremos executar os demais comandos:
